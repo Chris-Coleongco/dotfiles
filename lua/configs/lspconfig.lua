@@ -1,6 +1,7 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
 
+
 local lspconfig = require "lspconfig"
 
 lspconfig.rust_analyzer.setup {
@@ -8,8 +9,9 @@ lspconfig.rust_analyzer.setup {
   settings = {
     ['rust-analyzer'] = {},
   },
-}
+}  -- need to add formatting bawegwj
 
+lspconfig.gopls.setup({}) -- need to add formatting bawegwj
 -- EXAMPLE
 local servers = { "html", "cssls", }
 local nvlsp = require "nvchad.configs.lspconfig"
